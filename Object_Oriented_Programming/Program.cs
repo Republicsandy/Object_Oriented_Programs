@@ -2,13 +2,13 @@
 
 namespace Object_Oriented_Programming
 {
-    internal class Program
+    class Program
     {
         static void Main(string[] args)
         {
             Console.WriteLine("Wellcome to Object orianted Programming");
             Console.WriteLine("Enter 1 for inventery Management Program");
-            Console.WriteLine("Enter 2 to check daily wage of an employee");
+            Console.WriteLine("Enter 2 for stock account management");
           
             int getValueByUser = Convert.ToInt32(Console.ReadLine());
             switch (getValueByUser)
@@ -18,6 +18,10 @@ namespace Object_Oriented_Programming
                     stockaccount.StockAccount();
                     stockaccount.Transaction();
                     break;
+                    case 2:
+                    DeackOfCards deakofcards = new DeackOfCards();
+                    deakofcards.ShuffleCards();
+                    break;  
                 default:
                     Console.WriteLine("Entered value is incorrect");
                     break;
